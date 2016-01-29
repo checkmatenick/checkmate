@@ -11,6 +11,6 @@ function onYouTubeIframeAPIReady() {
 function onPlayerReady(event) {
     player.mute();
     player.playVideo();
-    $('#text').fadeIn(400);
 }
+
 

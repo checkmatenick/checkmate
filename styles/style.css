@@ -3,6 +3,7 @@
 html, body {
      height: 100%;
      margin: 0;
+    
 }
 
 /* ////////// PLAYER ////////// */
@@ -65,6 +66,7 @@ html, body {
 /* ////////// TEXT ////////// */
 
 #text {
+    display: none;
     font-size: 3em;
     text-align: center;
     z-index: 99!important;
@@ -81,10 +83,20 @@ html, body {
                0 5px 10px rgba(0,0,0,.25),
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
+    letter-spacing: 0.2em;
 }
 
 
+.scoreText {
+    color: ghostwhite;
+    font-family: 'Press Start 2P', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    vertical-align: middle;
+    display: inline-block;
+}
 
+.scoreTitle {
+    letter-spacing: 0.1em;   
+}
 
 /* ////////// SCOREBOARD ////////// */
 
@@ -93,11 +105,9 @@ html, body {
     text-align: center;
 }
 
-.scoreText {
-    color: ghostwhite;
-    font-family: 'Press Start 2P', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    vertical-align: middle;
-    display: inline-block;
+.number {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
 #player1 {
@@ -124,4 +134,20 @@ html, body {
 .score {
     display: inline-block;
     width: 100%;
+}
+
+/* ////////// MUSIC PLAYER ////////// */
+
+#musicContainer {
+    width: 100%;
+}
+
+#music {
+    display: table;
+    margin: 0 auto;
+    bottom: 2%;
+    position: absolute;
+    /*position: absolute;
+    bottom: 2%;
+    left: 41%;*/
 }
