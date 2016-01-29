@@ -1,0 +1,153 @@
+/* ////////// OVERALL ////////// */
+
+html, body {
+     height: 100%;
+     margin: 0;
+    
+}
+
+/* ////////// PLAYER ////////// */
+
+#ytplayer {
+    min-height: 100%;
+    position: fixed;
+    z-index: -99;
+    width: 100%;
+    height: 100%;
+}
+
+/* ////////// GIFS ////////// */
+.gif {
+    z-index: 1;
+    height: 200px;
+    width: 200px;
+}
+
+
+#hand {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#piece {
+	position: absolute;
+	top: 0;
+	right: 0%;
+}
+
+#screen {
+	position: absolute;
+	bottom: 0%;
+	left: 0;
+}
+#neon {
+	bottom: 0%;
+	right: 0%;
+	position: absolute;
+} 
+
+.yingyang {
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin: 0 auto;
+}
+/* GIFS: Responsive */
+
+@media only screen and (max-width:1310px) {
+    .gif {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+
+
+/* ////////// TEXT ////////// */
+
+#text {
+    display: none;
+    font-size: 3em;
+    text-align: center;
+    z-index: 99!important;
+    color: mediumpurple;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+    letter-spacing: 0.2em;
+}
+
+
+.scoreText {
+    color: ghostwhite;
+    font-family: 'Press Start 2P', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.scoreTitle {
+    letter-spacing: 0.1em;   
+}
+
+/* ////////// SCOREBOARD ////////// */
+
+.scoreBoard {
+    z-index: 99;
+    text-align: center;
+}
+
+.number {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+#player1 {
+    position: absolute;
+    
+    top: 40%;
+    left: 0%;
+}
+
+#player2 {
+    position: absolute;
+    
+    top: 40%;
+    right: 0%;
+}
+
+.button { 
+    background:none;
+    border:none;
+    color: ghostwhite;
+    size: 4em;
+}
+
+.score {
+    display: inline-block;
+    width: 100%;
+}
+
+/* ////////// MUSIC PLAYER ////////// */
+
+#musicContainer {
+    width: 100%;
+}
+
+#music {
+    display: table;
+    margin: 0 auto;
+    bottom: 2%;
+    position: absolute;
+    /*position: absolute;
+    bottom: 2%;
+    left: 41%;*/
+}
