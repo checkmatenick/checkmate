@@ -139,7 +139,6 @@ html, body {
 /* ////////// MUSIC PLAYER ////////// */
 
 #musicContainer {
-<<<<<<< HEAD
     width: 100%;
 }
 
@@ -151,4 +150,26 @@ html, body {
     right:25%;
     left:50%;
     margin-left:-150px;
+}
+
+/* ////////// RESPONSIVE GENERAL ////////// */
+
+@media only screen and (max-device-width: 800px) and (orientation: portrait) {
+    #player1 {
+        top: 15%;
+        right:25%;
+        left:50%;
+        margin-left:-220px;
+    }
+    
+    #player2 {
+        top: 75%;
+        right:25%;
+        left:50%;
+        margin-left:-220px;
+    }
+    
+    #text {
+        font-size: 5.1em;
+    }
 }
