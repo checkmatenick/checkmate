@@ -18,7 +18,7 @@ html, body {
 
 /* ////////// GIFS ////////// */
 .gif {
-    z-index: 1;
+    z-index: -50;
     height: 200px;
     width: 200px;
 }
@@ -139,15 +139,16 @@ html, body {
 /* ////////// MUSIC PLAYER ////////// */
 
 #musicContainer {
-    width: 100%;
+    width: 50%;
+    display: block;
 }
 
 #music {
-    display: table;
-    margin: 0 auto;
-    bottom: 2%;
     position: absolute;
-    /*position: absolute;
-    bottom: 2%;
+    bottom:0px;
+    right:25%;
+    left:50%;
+    margin-left:-150px;
+   /* bottom: 2%;
     left: 41%;*/
 }
