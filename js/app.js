@@ -11,11 +11,11 @@ var nickCount = 0;
     
 
 $( ".button" ).click(function() {
-    prompt("Who would win in a fight\n\nJimmy or Nick?", "");
+    var userAnswer = prompt("Who would win in a fight\n\nJimmy or Nick?", "");
 });
 
 var compare = function(userAnswer, password) {
-    if(userAnswer =! password) {
+    if(userAnswer != password) {
         alert("Nope");
     }
 }
